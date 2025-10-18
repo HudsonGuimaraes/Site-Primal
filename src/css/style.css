@@ -89,7 +89,7 @@ header .logo-text {
 
 .inicio p {
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 900px;
   margin-bottom: 20px;
 }
 
@@ -569,4 +569,104 @@ nav a:hover {
     .nav a:hover {
         background-color: #f0f0f0;
     }
+}
+
+
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(27, 67, 50, 0.7);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.servico-conteudo {
+  background: #fff;
+  margin-top: 40px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.servico-conteudo h3 {
+  color: #1b4332;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.servico-conteudo p {
+  margin-bottom: 20px;
+}
+
+.servico-conteudo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.servico-conteudo ul li {
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.servico-conteudo ul li::before {
+  content: "•";
+  color: #2d6a4f;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.beneficios i {
+  color: #2d6a4f;
+  margin-right: 10px;
+}
+
+.btn-principal {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #1b4332;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-principal:hover {
+  background: #2d6a4f;
+}
+
+.footer {
+  background: #1b4332;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #2d6a4f;
 }

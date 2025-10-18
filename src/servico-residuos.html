@@ -1,125 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Gerenciamento de Resíduos | Primal Ambiental</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/style.css">
-
-    <meta name="description" content="Consultoria e assessoria ambiental especializada para empresas. Soluções sustentáveis com excelência técnica.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Resíduos | Primal Ambiental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/4a3b6dc252.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
+  <!-- Header -->
+  <header class="header">
     <div class="header-left">
-        <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
-        <h1 class="logo-text">Primal Ambiental</h1>
+      <img src="../src/imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <h1 class="logo-text">Primal Ambiental</h1>
     </div>
+    <nav class="nav">
+      <a href="../index.html">Início</a>
+      <a href="../index.html#quem-somos">Quem Somos</a>
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+  </header>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+  <!-- Hero Section -->
+  <section class="hero-servico">
+    <div class="hero-content">
+      <h1>Gerenciamento de Resíduos</h1>
+      <p>Soluções completas e sustentáveis para o controle e destinação correta dos resíduos gerados pela sua empresa.</p>
+    </div>
+  </section>
 
-        <nav class="nav" id="nav-menu">
-            <a href="/index.html#inicio">Início</a>
-            <a href="/index.html#quem-somos">Quem somos</a>
-            <a href="/index.html#servicos">Serviços</a>
-            <a href="/index.html#clientes">Clientes</a>
-            <a href="/index.html#contato">Contato</a>
-        </nav>
-    </header>
-
-    <section class="inicio" id="inicio">
-        <div>
-            <h2>Gerenciamento de Resíduos</h2>
-            <p>A Primal Ambiental oferece soluções completas para o gerenciamento de resíduos, desde a caracterização até a destinação final adequada.</p>
-            <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Fale Conosco</button>
-        </div>
+  <!-- Conteúdo Principal -->
+  <main class="servico-conteudo">
+    <section>
+      <h2>Sobre o Serviço</h2>
+      <p>
+        O gerenciamento de resíduos é um dos pilares fundamentais da <strong>Primal Ambiental</strong>.
+        Atuamos na identificação, classificação, armazenamento, transporte e destinação final dos resíduos,
+        sempre em conformidade com a Política Nacional de Resíduos Sólidos (Lei nº 12.305/2010) e demais legislações vigentes.
+      </p>
     </section>
 
     <section>
-        <p>
-            Atuamos em:
-        </p>
-        <ul>
-            <li>Elaboração de Plano de Gerenciamento de Resíduos</li>
-            <li>Monitoramento e controle de resíduos gerados</li>
-            <li>Identificação de soluções sustentáveis</li>
-            <li>Treinamento e capacitação de equipes</li>
-        </ul>
+      <h2>Atividades Realizadas</h2>
+      <ul>
+        <li>Diagnóstico e classificação dos resíduos (Classe I, II-A e II-B);</li>
+        <li>Elaboração e atualização do Plano de Gerenciamento de Resíduos Sólidos (PGRS);</li>
+        <li>Implantação de sistemas de coleta seletiva;</li>
+        <li>Controle documental de transporte e destinação de resíduos (MTR, CADRI, CTR);</li>
+        <li>Seleção e avaliação de transportadores e destinadores licenciados;</li>
+        <li>Elaboração de relatórios ambientais periódicos e indicadores de desempenho;</li>
+        <li>Capacitação e treinamentos para colaboradores sobre boas práticas de gestão de resíduos.</li>
+      </ul>
     </section>
 
-    <!-- Seção Serviços -->
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="imagens/industria.png" alt="service icon"  class="service-icon">
-                <a href="servico-licenciamento.html">Licenciamento Ambiental</a>
-                <p>Temos soluções completas para o licenciamento ambiental em todas as suas etapas. Realizamos estudos ambientais necessários para o licenciamento, bem como o atendimento às condicionantes das licenças.</p></div>
-            <div class="service-card">
-                <img src="imagens/auditoria.png" alt="service icon"  class="service-icon">
-                <a href="servico-auditoria.html">Auditoria Ambiental</a>
-                <p>Realizamos auditorias para avaliação ambiental interna para atendimento legal e em casos de compra e venda de ativos (Due Diligence Ambiental). Nós possuímos experiência em adequações ambientais para homologação de fornecedores em grandes empresas.</p></div>
-            <div class="service-card">
-                <img src="imagens/protecao-ambiental.png" alt="service icon"  class="service-icon">
-                <a href="servico-assessoria.html">Assessoria Ambiental</a>
-                <p>Temos experiência na condução de processos ambientais e no atendimento às conformidades legais para auxiliar nos diversos temas da área ambiental. Auxiliamos no planejamento ambiental para orientar a concepção de projetos e empreendimentos, antecipando riscos e conflitos.</p></div>
-            <div class="service-card">
-                <img src="imagens/poluicao-do-solo.png" alt="service icon"  class="service-icon">
-                <a href="servico-areas-contaminadas.html">Gerenciamento de Áreas Contaminadas</a>
-                <p>Nossas soluções em Gerenciamento de Áreas Contaminadas se estendem desde a etapa inicial, com a identificação e detalhamento do passivo, até a remediação e o encerramento do processo, trazendo confiança para o empreendedor.</p></div>
-            <div class="service-card">
-                <img src="imagens/estacao-de-esgoto.png" alt="service icon"  class="service-icon">
-                <a href="servico-ete-eta.html">Projetos de ETE/ETA</a>
-                <p>Desenvolvemos projetos personalizados de Estações de Tratamento de Efluentes (ETE) e Estações de Tratamento de Água (ETA), visando a eficiência, o atendimento à legislação e a sustentabilidade. Nossas soluções atendem às necessidades específicas de cada cliente, contribuindo para a proteção dos recursos hídricos.</p></div>
-            <div class="service-card">
-                <img src="imagens/ambiental.png" alt="service icon"  class="service-icon">
-                <a href="servico-prad.html">Recuperação de Áreas Degradadas (PRAD)</a>
-                <p>Elaboramos Programas de Recuperação de Áreas Degradadas (PRAD), promovendo a reabilitação ambiental de áreas impactadas. Atuamos no diagnóstico, planejamento e implementação de técnicas de recuperação, visando restabelecer a funcionalidade dos ecossistemas e o atendimento às exigências legais.</p></div>
-            <div class="service-card">
-                <img src="imagens/seguranca-contra-incendios.png" alt="service icon"  class="service-icon">
-                <a href="servico-ppci.html">Projeto de Proteção Contra Incêndio (PPCI)</a>
-                <p>Desenvolvemos e aprovamos Projetos de Prevenção e Proteção Contra Incêndio (PPCI) em conformidade com as normas vigentes. Atuamos na elaboração de plantas, dimensionamento de sistemas preventivos e suporte técnico para obtenção de licenças junto aos órgãos competentes.</p></div>
-        </div>
+    <section>
+      <h2>Benefícios</h2>
+      <p>
+        O gerenciamento eficiente de resíduos reduz custos operacionais, evita passivos ambientais e fortalece
+        a imagem sustentável da sua empresa perante clientes, órgãos ambientais e a sociedade.
+      </p>
     </section>
+  </main>
 
-    <!-- Seção Contato -->
-    <section class="contact-section" id="contato">
-        <div class="contact-form">
-            <h2>Entre em Contato</h2>
-            <form>
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <h3>Informações para Contato</h3>
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/5521992621453" target="_blank"> (21) 99262-1453</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a>
-            </p>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contato">
+    <div class="contact-form">
+      <h2>Entre em Contato</h2>
+      <form action="https://formsubmit.co/comercial@primalambiental.com.br" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
 
-    <!-- Rodapé -->
-    <footer>
-        <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
-        <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
-    </footer>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Informações para Contato</h3>
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a>
+      </p>
+      <p>
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5521992621453" target="_blank"> (21) 99262-1453</a>
+      </p>
+      <p>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
+    <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
