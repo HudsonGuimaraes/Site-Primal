@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerenciamento de Áreas Contaminadas | Primal Ambiental</title>
-  <link rel="stylesheet" href="../src/css/style.css">
-  <link rel="shortcut icon" href="../src/imagens/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/4a3b6dc252.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Header -->
   <header class="header">
     <div class="header-left">
-      <img src="../src/imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
       <h1 class="logo-text">Primal Ambiental</h1>
     </div>
     <nav class="nav">
@@ -24,47 +21,53 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-servico">
-    <div class="hero-content">
-      <h1>Gerenciamento de Áreas Contaminadas</h1>
-      <p>Diagnóstico, avaliação e recuperação de áreas potencialmente contaminadas com base nas normas e diretrizes ambientais vigentes.</p>
+  <section class="banner" style="background-image: url('../imagens/areas-contaminadas-bg.jpg');">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Gerenciamento de Áreas Contaminadas</h2>
+      <p>Do diagnóstico à remediação, com foco em segurança, conformidade e valorização do ativo.</p>
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
-  <main class="servico-conteudo">
+  <main class="servico-conteudo container">
     <section>
-      <h2>Sobre o Serviço</h2>
+      <h3>Posicionamento</h3>
       <p>
-        A <strong>Primal Ambiental</strong> realiza o gerenciamento completo de áreas contaminadas, desde a investigação preliminar até o monitoramento pós-remediação.
-        Nosso trabalho segue as diretrizes da <strong>CETESB</strong>, <strong>CONAMA 420/2009</strong> e demais normas aplicáveis,
-        garantindo a segurança ambiental e a conformidade legal do empreendimento.
+        Atuamos em conformidade com diretrizes CETESB, CONAMA e normas técnicas,
+        garantindo decisões baseadas em risco, transparência e efetividade das soluções.
       </p>
     </section>
 
     <section>
-      <h2>Etapas do Processo</h2>
+      <h3>Como atuamos</h3>
+      <p>
+        Estruturamos o processo investigativo e de intervenção com rigor metrológico e controle de qualidade analítica,
+        integrando stakeholders e órgãos ambientais em todas as fases.
+      </p>
       <ul>
-        <li><strong>Investigação Preliminar:</strong> Identificação de áreas suspeitas e levantamento histórico de atividades potencialmente poluidoras;</li>
-        <li><strong>Investigação Confirmatória:</strong> Coleta e análise de amostras de solo, água subterrânea e gases;</li>
-        <li><strong>Investigação Detalhada:</strong> Definição da extensão da contaminação e avaliação dos riscos à saúde e ao meio ambiente;</li>
-        <li><strong>Plano de Intervenção:</strong> Elaboração de medidas corretivas e de remediação;</li>
-        <li><strong>Remediação Ambiental:</strong> Execução das ações corretivas e monitoramento da eficiência das medidas adotadas;</li>
-        <li><strong>Monitoramento Pós-Remediação:</strong> Acompanhamento periódico para assegurar a estabilidade ambiental da área.</li>
+        <li>Investigação preliminar, confirmatória e detalhada;</li>
+        <li>Avaliação de risco à saúde humana e ao meio físico;</li>
+        <li>Plano de intervenção e remediação;</li>
+        <li>Monitoramento e verificação pós-remediação;</li>
+        <li>Relatórios técnicos e interface regulatória.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Benefícios</h2>
-      <p>
-        O gerenciamento adequado de áreas contaminadas reduz riscos de passivos ambientais, valoriza o imóvel,
-        garante segurança aos colaboradores e à comunidade e promove o cumprimento das exigências legais e institucionais.
-      </p>
+      <h3>Benefícios e diferenciais</h3>
+      <ul class="beneficios">
+        <li><i class="fa-solid fa-shield-halved"></i> Redução de riscos e segurança operacional;</li>
+        <li><i class="fa-solid fa-clipboard-check"></i> Conformidade legal e técnica assegurada;</li>
+        <li><i class="fa-solid fa-handshake"></i> Gestão integrada com foco em resultados;</li>
+        <li><i class="fa-solid fa-chart-line"></i> Valorização do imóvel e governança ambiental.</li>
+      </ul>
     </section>
+
+    <div class="cta">
+      <a href="../index.html#contato" class="btn-principal">Solicite uma proposta</a>
+    </div>
   </main>
 
-  <!-- Contact Section -->
   <section class="contact-section" id="contato">
     <div class="contact-form">
       <h2>Entre em Contato</h2>
@@ -72,36 +75,26 @@
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
-
         <button type="submit">Enviar</button>
       </form>
     </div>
     <div class="contact-info">
       <h3>Informações para Contato</h3>
-      <p>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a>
-      </p>
-      <p>
-        <i class="fa-brands fa-whatsapp"></i>
-        <a href="https://wa.me/5521992621453" target="_blank"> (21) 99262-1453</a>
-      </p>
-      <p>
-        <i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a>
-      </p>
+      <p><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <img src="../src/imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
+    <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
     <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
 

@@ -1,174 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primal Ambiental</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
-    <!-- Estilo  -->
-    <link rel="stylesheet" href="src/css/style.css">
-    <!-- SEO -->
-    <!-- <meta name="description" content="Consultoria e assessoria ambiental especializada para empresas. Soluções sustentáveis com excelência técnica."> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primal Ambiental | Consultoria e Gestão Ambiental</title>
+  <meta name="description" content="Primal Ambiental: consultoria e assessoria técnica em licenciamento, resíduos, ESG, áreas contaminadas e segurança. Atuação nacional com soluções completas e personalizadas.">
+  <meta name="keywords" content="consultoria ambiental, licenciamento ambiental, assessoria ambiental, gestão de resíduos, PRAD, auditoria ambiental, PPCI, ESG, ETE, ETA">
+  <meta name="author" content="Primal Ambiental Consultoria">
+  <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+
+  <!-- Header fixo -->
+  <header class="header">
     <div class="header-left">
-        <img src="src/imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
-        <h1 class="logo-text">Primal Ambiental</h1>
+      <img src="src/imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <h1 class="logo-text">Primal Ambiental</h1>
+    </div>
+    <!-- Ícone do menu (hambúrguer) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="theme-toggle" id="theme-toggle" title="Alternar tema">
+    <i class="fa-solid fa-moon"></i>
+</div>
+
+  </header>
+
+  <!-- Botão fixo de WhatsApp -->
+  <a href="https://wa.me/5521992621453" target="_blank" class="whatsapp-btn" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Banner principal -->
+  <section class="banner-principal fade-in" id="inicio" style="background-image: url('src/imagens/banner-principal.jpg');">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h2>Soluções ambientais integradas para empresas em todo o Brasil</h2>
+      <p>Assessoria mensal, licenciamento, resíduos, ESG e segurança – tudo em um só parceiro técnico de confiança.</p>
+      <a href="#contato" class="btn-principal">Solicite uma Proposta</a>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section class="quem-somos container fade-in" id="quem-somos">
+    <h2>Quem Somos</h2>
+    <div>
+      <p>
+        A <strong>Primal Ambiental</strong> é uma empresa de consultoria e assessoria ambiental que atua em todo o território nacional,
+        oferecendo soluções completas em licenciamento, gerenciamento de resíduos, áreas contaminadas, segurança e sustentabilidade.
+      </p>
+      <p>
+        Formada por uma equipe técnica especializada em engenharia ambiental e segurança do trabalho, a Primal se destaca pela
+        qualidade técnica, cumprimento de prazos e relacionamento próximo com clientes e órgãos ambientais.
+      </p>
+      <p>
+        Nosso propósito é garantir que empresas alcancem a conformidade ambiental com eficiência, transparência e responsabilidade.
+      </p>
+    </div>
+    <div class="fade-in">
+      <img src="src/imagens/Logotipo.png" alt="Logo da primal ambiental" width="20%">
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="servicos container fade-in" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos-grid">
+      <a href="src/servico-assessoria.html" class="card-servico fade-in">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Assessoria Ambiental</h3>
+        <p>Gestão mensal e contínua de todas as demandas ambientais da sua empresa.</p>
+      </a>
+
+      <a href="src/servico-licenciamento.html" class="card-servico fade-in">
+        <i class="fa-solid fa-clipboard-check"></i>
+        <h3>Licenciamento Ambiental</h3>
+        <p>Elaboração de estudos, acompanhamento técnico e regularização junto aos órgãos ambientais.</p>
+      </a>
+
+      <a href="src/servico-residuos.html" class="card-servico fade-in">
+        <i class="fa-solid fa-recycle"></i>
+        <h3>Gerenciamento de Resíduos</h3>
+        <p>Diagnóstico, PGRS, rastreabilidade e controle de destinações.</p>
+      </a>
+
+      <a href="src/servico-auditoria.html" class="card-servico fade-in">
+        <i class="fa-solid fa-magnifying-glass-chart"></i>
+        <h3>Auditoria Ambiental</h3>
+        <p>Diagnóstico de conformidade e apoio à tomada de decisão.</p>
+      </a>
+
+      <a href="src/servico-areas-contaminadas.html" class="card-servico fade-in">
+        <i class="fa-solid fa-flask"></i>
+        <h3>Áreas Contaminadas</h3>
+        <p>Investigação, remediação e gerenciamento ambiental completo.</p>
+      </a>
+
+      <a href="src/servico-prad.html" class="card-servico fade-in">
+        <i class="fa-solid fa-tree"></i>
+        <h3>PRAD</h3>
+        <p>Recuperação de áreas degradadas com base técnica e indicadores de sucesso.</p>
+      </a>
+
+      <a href="src/servico-ete-eta.html" class="card-servico fade-in">
+        <i class="fa-solid fa-water"></i>
+        <h3>Projetos de ETE e ETA</h3>
+        <p>Tratamento de efluentes e água potável com eficiência e sustentabilidade.</p>
+      </a>
+
+      <a href="src/servico-ppci.html" class="card-servico fade-in">
+        <i class="fa-solid fa-fire-extinguisher"></i>
+        <h3>PPCI</h3>
+        <p>Elaboração e aprovação de projetos de prevenção e combate a incêndios.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Clientes e Cases -->
+  <section class="clientes container fade-in" id="clientes">
+    <h2>Clientes e Cases</h2>
+    <p>Empresas que confiam na Primal Ambiental para a gestão de suas operações ambientais:</p>
+
+    <div class="clientes-grid">
+      <div class="cliente-item fade-in">
+        <img src="src/imagens/casas-bahia.png" alt="Casas Bahia">
+        <p>Assessoria mensal e licenciamento de centros de distribuição em todo o Brasil.</p>
+      </div>
+
+      <div class="cliente-item fade-in">
+        <img src="src/imagens/rc.jpg" alt="RC">
+        <p>Gerenciamento de resíduos e atendimento a condicionantes ambientais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="diferenciais container fade-in">
+    <h2>Por que escolher a Primal Ambiental</h2>
+    <ul class="diferenciais-lista">
+      <li><i class="fa-solid fa-globe"></i> Atuação nacional com suporte técnico completo;</li>
+      <li><i class="fa-solid fa-leaf"></i> Compromisso com sustentabilidade e práticas ESG;</li>
+      <li><i class="fa-solid fa-users-gear"></i> Equipe técnica multidisciplinar experiente;</li>
+      <li><i class="fa-solid fa-clipboard-check"></i> Conformidade garantida e redução de riscos;</li>
+      <li><i class="fa-solid fa-handshake"></i> Parceria de longo prazo e atendimento personalizado.</li>
+    </ul>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact-section fade-in" id="contato">
+    <div class="contact-form">
+      <h2>Entre em Contato</h2>
+      <form action="https://formsubmit.co/comercial@primalambiental.com.br" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+
+        <!-- Proteções -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.primalambiental.com.br/obrigado.html">
+        <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
+
+        <button type="submit">Enviar</button>
+      </form>
     </div>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <div class="contact-info fade-in">
+      <h3>Informações para Contato</h3>
+      <p><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
+    </div>
 
-    <nav class="nav" id="nav-menu">
-        <a href="#inicio">Início</a>
-        <a href="#quem-somos">Quem somos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#clientes">Clientes</a>
-        <a href="#contato">Contato</a>
-    </nav>
-    </header>
+    <div class="contact-map fade-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.110011688616!2d-43.20937218449127!3d-22.90353998400224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f60f15864ab%3A0xf11b!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1696549819190!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
-    <!-- Home Section -->
-    <section class="inicio" id="inicio">
-        <div>
-            <h2>Consultoria Ambiental Estratégica em Todo o Brasil</h2>
-            <p>Oferecemos soluções ambientais integradas e personalizadas, equilibrando viabilidade econômica, responsabilidade social e sustentabilidade ambiental</p>
-            <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Fale Conosco</button>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <img src="src/imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
+    <p>© 2025 Primal Ambiental Consultoria | CNPJ 47.333.459/0001-70 | Rio de Janeiro - RJ</p>
+  </footer>
 
-    <!-- Performance Section -->
-    <section class="o-que-fazemos">
-        <h2>Atuação Nacional com Soluções Personalizadas</h2>
-        <div class="conteudo-fazemos">
-            <div class="texto-fazemos">
-                <p>
-                    Atuamos como um parceiro estratégico, oferecendo soluções que garantem previsibilidade, segurança e suporte técnico contínuo em todas as etapas do processo. Nossos diferenciais incluem</p>
-                    <ul>
-                        <li>Controle rigoroso e redução de riscos ambientais</li>
-                        <li>Otimização de custos e processos</li>
-                        <li>Agilidade em aprovações e regularizações</li>
-                        <li>Assessoria técnica especializada e permanente</li>
-                    </ul>
-                    <p>Conte com a Primal para transformar desafios ambientais em oportunidades de valor.</p>
-            </div>
-            <div class="imagem-fazemos">
-                <img src="src/imagens/atuacao.png" alt="Mapa do Brasil">
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <h3>Serviços Especializados em Gestão e Consultoria Ambiental</h3>
-        <div class="services-grid">
-            <article class="service-card">
-                <img src="src/imagens/industria.png" alt="Ícone de uma indústria"  class="service-icon">
-                <h3><a href="src/servico-licenciamento.html">Licenciamento Ambiental</a></h3>
-                <p>Garanta a viabilidade ambiental e legal dos seus empreendimentos. Atuamos em todas as etapas do licenciamento ambiental, elaborando estudos técnicos, conduzindo processos junto aos órgãos competentes e assegurando o atendimento completo às condicionantes.</p></article>
-            <div class="service-card">
-                <img src="src/imagens/sinal-de-reciclagem.png" alt="Ícone de reciclagem"  class="service-icon">
-                <h3><a href="src/servico-residuos.html">Gerenciamento de Resíduos</a></h3>
-                <p>Otimize a gestão de resíduos e reduza riscos ambientais e operacionais. Desenvolvemos Planos de Gerenciamento de Resíduos Sólidos (PGRS) personalizados, promovemos estratégias de redução, reaproveitamento e destinação adequada, além de garantir a conformidade legal e emissão de CADRI.</p></div>
-            <div class="service-card">
-                <img src="src/imagens/auditoria.png" alt="Ícone de uma prancheta"  class="service-icon">
-                <h3><a href="src/servico-auditoria.html">Auditoria Ambiental</a></h3>
-                <p>Identifique riscos e oportunidades em suas operações. Realizamos auditorias ambientais detalhadas para garantir o cumprimento da legislação, apoiar processos de compra e venda de ativos (Due Diligence Ambiental) e adequar fornecedores aos padrões de grandes empresas.</p></div>
-            <div class="service-card">
-                <img src="src/imagens/protecao-ambiental.png" alt="Ícone de uma mão com flor"  class="service-icon">
-                <h3><a href="src/servico-assessoria.html">Assessoria Ambiental</a></h3>
-                <p>Reduza incertezas e antecipe riscos em projetos e operações. Oferecemos assessoria técnica contínua em processos ambientais e conformidades legais, orientando o planejamento estratégico e apoiando a concepção de empreendimentos com foco em sustentabilidade e segurança jurídica.</p></div>
-            <div class="service-card">
-                <img src="src/imagens/poluicao-do-solo.png" alt="Ícone de um solo contaminado"  class="service-icon">
-                <h3><a href="src/servico-areas-contaminadas.html">Gerenciamento de Áreas Contaminadas</a></h3>
-                <p>Assegure a gestão eficiente de passivos ambientais. Atuamos desde a investigação inicial até a remediação e encerramento de áreas contaminadas, oferecendo segurança técnica, conformidade regulatória e respaldo para tomada de decisões estratégicas.</p></div>
-            <div class="service-card">
-                <img src="src/imagens/estacao-de-esgoto.png" alt="Ícone de uma estação de esgoto"  class="service-icon">
-                <h3><a href="src/servico-ete-eta.html">Projetos de ETE/ETA</a></h3>
-                <p>Garanta a eficiência no tratamento de efluentes e de água. Desenvolvemos projetos sob medida de Estações de Tratamento de Efluentes (ETE) e Estações de Tratamento de Água (ETA), priorizando desempenho, conformidade legal e sustentabilidade ambiental.</p></div>
-            <div class="service-card">
-                <img src="src/imagens/ambiental.png" alt="ìcone de uma planta"  class="service-icon">
-                <h3><a href="src/servico-prad.html">Recuperação de Áreas Degradadas (PRAD)</a></h3>
-                <p>Recupere áreas impactadas com soluções técnicas eficazes. Elaboramos Programas de Recuperação de Áreas Degradadas (PRAD), conduzindo diagnóstico, planejamento e implementação de ações que restauram a funcionalidade ambiental e atendem às exigências legais.</p></div>
-            <div class="service-card">
-                <img src="src/imagens/seguranca-contra-incendios.png" alt="Ícone de um sprinter"  class="service-icon">
-                <h3><a href="src/servico-ppci.html">Projeto de Proteção Contra Incêndio (PPCI)</a></h3>
-                <p>Proteja seus ativos e assegure a conformidade legal. Desenvolvemos e aprovamos Projetos de Prevenção e Proteção Contra Incêndio (PPCI), elaborando plantas técnicas, dimensionando sistemas de segurança e assessorando no processo de obtenção das licenças necessárias.</p></div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="quem-somos" id="quem-somos">
-        <h2>Sobre a Primal Ambiental</h2>
-        <div class="conteudo-quem-somos">
-            <div class="texto-quem-somos">
-                <p>A Primal Ambiental é uma consultoria especializada em gestão ambiental e segurança do trabalho. Oferecemos soluções personalizadas e de alta performance para atender aos requisitos legais, reduzir riscos operacionais e fortalecer a reputação socioambiental das empresas.</p>
-                <p>Transformamos o conceito de sustentabilidade em ações práticas e mensuráveis no dia a dia das organizações, promovendo resultados ambientais e corporativos positivos.</p>
-                <h3>Segurança, Sustentabilidade e Satisfação do Cliente</h3>
-                <p>A gestão ambiental corporativa exige rigor técnico e constante atualização. Oferecemos assessoria especializada para que nossos clientes mantenham a conformidade legal, mitiguem riscos e foquem no crescimento sustentável de seus negócios.</p>
-            </div> 
-            <div class="imagem-primal">
-                 <img src="src/imagens/imagem primal.jpeg" alt="Primal" height="300">
-            </div>
-        </div>
-    </section>
-
-    <!-- Customers Section -->
-    <section class="clientes" id="clientes">
-        <h2>Projetos em Destaque</h2>
-        <h3>Sucesso do Cliente</h3>
-        <div class="clientes-logos">
-            <img src="src/imagens/casas-bahia.png" alt="casas Bahia">
-            <img src="src/imagens/rc.jpg" alt="RC">
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section class="contact-section" id="contato">
-        <div class="contact-form">
-            <h2>Entre em Contato</h2>
-            <form action="https://formsubmit.co/comercial@primalambiental.com.br" method="POST">
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-                <!-- Additional protections -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <h3>Informações para Contato</h3>
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/5521992621453" target="_blank"> (21) 99262-1453</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a>
-            </p>
-        </div>
-    </section>
-
-    <!-- Baseboard -->
-    <footer>
-        <img src="src/imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
-        <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
-    </footer>
-        <!-- JavaScript -->
-    <script src="src/js/script.js"></script>
+  <!-- Scripts -->
+  <script src="src/js/script.js"></script>
 </body>
 </html>

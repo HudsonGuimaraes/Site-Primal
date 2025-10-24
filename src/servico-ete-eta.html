@@ -1,126 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Projetos de ETE/ETA | Primal Ambiental</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/style.css">
-
-    <meta name="description" content="Consultoria e assessoria ambiental especializada para empresas. Soluções sustentáveis com excelência técnica.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos de ETE e ETA | Primal Ambiental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-    <header>
+  <header class="header">
     <div class="header-left">
-        <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
-        <h1 class="logo-text">Primal Ambiental</h1>
+      <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <h1 class="logo-text">Primal Ambiental</h1>
     </div>
+    <nav class="nav">
+      <a href="../index.html">Início</a>
+      <a href="../index.html#quem-somos">Quem Somos</a>
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+  </header>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+  <section class="banner" style="background-image: url('../imagens/ete-eta-bg.jpg');">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Projetos de ETE e ETA</h2>
+      <p>Eficiência, conformidade e sustentabilidade no tratamento de efluentes e água potável.</p>
+    </div>
+  </section>
 
-        <nav class="nav" id="nav-menu">
-            <a href="/index.html#inicio">Início</a>
-            <a href="/index.html#quem-somos">Quem somos</a>
-            <a href="/index.html#servicos">Serviços</a>
-            <a href="/index.html#clientes">Clientes</a>
-            <a href="/index.html#contato">Contato</a>
-        </nav>
-    </header>
-    
-    <section class="inicio" id="inicio">
-        <div>
-            <h2>Projetos de ETE/ETA</h2>
-            <p>Desenvolvemos projetos completos de Estações de Tratamento de Efluentes (ETE) e Estações de Tratamento de Água (ETA), visando a eficiência e a sustentabilidade dos processos.</p>
-            <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Fale Conosco</button>
-        </div>
+  <main class="servico-conteudo container">
+    <section>
+      <h3>Posicionamento</h3>
+      <p>
+        Projetamos e implementamos soluções de tratamento alinhadas às metas de qualidade, OPEX competitivo e requisitos legais,
+        com foco em performance e continuidade operacional.
+      </p>
     </section>
 
     <section>
-        <p>
-            Nossos serviços contemplam:
-        </p>
-        <ul>
-            <li>Estudos de viabilidade técnica e econômica</li>
-            <li>Projeto executivo de ETE/ETA</li>
-            <li>Assistência técnica na implantação</li>
-            <li>Otimização de processos de tratamento</li>
-        </ul>
+      <h3>Como atuamos</h3>
+      <p>
+        Do estudo de viabilidade ao start-up assistido, entregamos engenharia completa, documentação e treinamento de equipes.
+      </p>
+      <ul>
+        <li>Dimensionamento e projeto conceitual/detalhado;</li>
+        <li>Memoriais, especificações e plantas técnicas;</li>
+        <li>Viabilidade técnica-econômica;</li>
+        <li>Implantação, comissionamento e operação assistida;</li>
+        <li>Monitoramento de eficiência e adequação normativa.</li>
+      </ul>
     </section>
 
-    <!-- Seção Serviços -->
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="imagens/industria.png" alt="service icon"  class="service-icon">
-                <a href="servico-licenciamento.html">Licenciamento Ambiental</a>
-                <p>Temos soluções completas para o licenciamento ambiental em todas as suas etapas. Realizamos estudos ambientais necessários para o licenciamento, bem como o atendimento às condicionantes das licenças.</p></div>
-            <div class="service-card">
-                <img src="imagens/sinal-de-reciclagem.png" alt="service icon"  class="service-icon">
-                <a href="servico-residuos.html">Gerenciamento de Resíduos</a>
-                <p>Elaboramos o Plano de Gerenciamento de Resíduos Sólidos (PGRS) para diversos setores, como construção civil, indústrias e serviços de saúde. Realizamos análises para redução, reaproveitamento e reutilização de resíduos.  Fazemos a gestão para destinação de resíduos perigosos ou não, além da emissão de CADRI.</p></div>
-            <div class="service-card">
-                <img src="imagens/auditoria.png" alt="service icon"  class="service-icon">
-                <a href="servico-auditoria.html">Auditoria Ambiental</a>
-                <p>Realizamos auditorias para avaliação ambiental interna para atendimento legal e em casos de compra e venda de ativos (Due Diligence Ambiental). Nós possuímos experiência em adequações ambientais para homologação de fornecedores em grandes empresas.</p></div>
-            <div class="service-card">
-                <img src="imagens/protecao-ambiental.png" alt="service icon"  class="service-icon">
-                <a href="servico-assessoria.html">Assessoria Ambiental</a>
-                <p>Temos experiência na condução de processos ambientais e no atendimento às conformidades legais para auxiliar nos diversos temas da área ambiental. Auxiliamos no planejamento ambiental para orientar a concepção de projetos e empreendimentos, antecipando riscos e conflitos.</p></div>
-            <div class="service-card">
-                <img src="imagens/poluicao-do-solo.png" alt="service icon"  class="service-icon">
-                <a href="servico-areas-contaminadas.html">Gerenciamento de Áreas Contaminadas</a>
-                <p>Nossas soluções em Gerenciamento de Áreas Contaminadas se estendem desde a etapa inicial, com a identificação e detalhamento do passivo, até a remediação e o encerramento do processo, trazendo confiança para o empreendedor.</p></div>
-            <div class="service-card">
-                <img src="imagens/ambiental.png" alt="service icon"  class="service-icon">
-                <a href="servico-prad.html">Recuperação de Áreas Degradadas (PRAD)</a>
-                <p>Elaboramos Programas de Recuperação de Áreas Degradadas (PRAD), promovendo a reabilitação ambiental de áreas impactadas. Atuamos no diagnóstico, planejamento e implementação de técnicas de recuperação, visando restabelecer a funcionalidade dos ecossistemas e o atendimento às exigências legais.</p></div>
-            <div class="service-card">
-                <img src="imagens/seguranca-contra-incendios.png" alt="service icon"  class="service-icon">
-                <a href="servico-ppci.html">Projeto de Proteção Contra Incêndio (PPCI)</a>
-                <p>Desenvolvemos e aprovamos Projetos de Prevenção e Proteção Contra Incêndio (PPCI) em conformidade com as normas vigentes. Atuamos na elaboração de plantas, dimensionamento de sistemas preventivos e suporte técnico para obtenção de licenças junto aos órgãos competentes.</p></div>
-        </div>
+    <section>
+      <h3>Benefícios e diferenciais</h3>
+      <ul class="beneficios">
+        <li><i class="fa-solid fa-water"></i> Qualidade de efluente/água dentro de padrões;</li>
+        <li><i class="fa-solid fa-clipboard-check"></i> Conformidade regulatória garantida;</li>
+        <li><i class="fa-solid fa-leaf"></i> Redução de impactos e otimização de recursos;</li>
+        <li><i class="fa-solid fa-handshake"></i> Projeto sob medida para cada operação.</li>
+      </ul>
     </section>
 
-  <!-- Seção Contato -->
-    <section class="contact-section" id="contato">
-        <div class="contact-form">
-            <h2>Entre em Contato</h2>
-            <form>
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <h3>Informações para Contato</h3>
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/5521992621453" target="_blank"> (21) 99262-1453</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a>
-            </p>
-        </div>
-    </section>
+    <div class="cta">
+      <a href="../index.html#contato" class="btn-principal">Solicite uma proposta</a>
+    </div>
+  </main>
 
+  <section class="contact-section" id="contato">
+    <div class="contact-form">
+      <h2>Entre em Contato</h2>
+      <form action="https://formsubmit.co/comercial@primalambiental.com.br" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Informações para Contato</h3>
+      <p><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
+    </div>
+  </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
-        <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
+    <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

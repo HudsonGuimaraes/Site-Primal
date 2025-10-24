@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Auditoria Ambiental | Primal Ambiental</title>
-  <link rel="stylesheet" href="../src/css/style.css">
-  <link rel="shortcut icon" href="../src/imagens/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/4a3b6dc252.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Header -->
   <header class="header">
     <div class="header-left">
-      <img src="../src/imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
       <h1 class="logo-text">Primal Ambiental</h1>
     </div>
     <nav class="nav">
@@ -24,54 +21,52 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-servico">
-    <div class="hero-content">
-      <h1>Auditoria Ambiental</h1>
-      <p>Avaliação sistemática do desempenho ambiental da sua empresa, garantindo conformidade legal e melhoria contínua.</p>
+  <section class="banner" style="background-image: url('../imagens/auditoria-bg.jpg');">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Auditoria Ambiental</h2>
+      <p>Visão detalhada do compliance e do desempenho ambiental para decisões mais seguras e sustentáveis.</p>
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
-  <main class="servico-conteudo">
+  <main class="servico-conteudo container">
     <section>
-      <h2>Sobre o Serviço</h2>
+      <h3>Posicionamento</h3>
       <p>
-        A <strong>Primal Ambiental</strong> realiza auditorias ambientais detalhadas com o objetivo de verificar o atendimento às legislações, licenças e boas práticas ambientais.
-        Nossas auditorias auxiliam empresas a identificar não conformidades, reduzir riscos e aprimorar seus sistemas de gestão ambiental.
+        A <strong>Primal Ambiental</strong> conduz auditorias que unem rigor técnico e clareza executiva,
+        identificando riscos, lacunas e oportunidades de melhoria para suportar sua governança.
       </p>
     </section>
 
     <section>
-      <h2>Tipos de Auditoria Realizadas</h2>
-      <ul>
-        <li><strong>Auditoria de Conformidade Legal:</strong> Verificação do cumprimento das obrigações ambientais perante os órgãos competentes;</li>
-        <li><strong>Auditoria de Sistema de Gestão Ambiental (SGA):</strong> Avaliação da implementação e eficácia do SGA conforme a norma ISO 14001;</li>
-        <li><strong>Auditoria de Due Diligence Ambiental:</strong> Análise técnica e documental para fusões, aquisições ou arrendamentos industriais;</li>
-        <li><strong>Auditoria de Desempenho:</strong> Avaliação de indicadores ambientais e oportunidades de melhoria contínua.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Etapas da Auditoria</h2>
-      <ul>
-        <li>Planejamento e definição do escopo de auditoria;</li>
-        <li>Levantamento de documentos e registros ambientais;</li>
-        <li>Inspeção técnica in loco e entrevistas com responsáveis;</li>
-        <li>Identificação de não conformidades e oportunidades de melhoria;</li>
-        <li>Elaboração do relatório técnico com plano de ação proposto.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Benefícios</h2>
+      <h3>Como atuamos</h3>
       <p>
-        A auditoria ambiental proporciona segurança jurídica, evita autuações e passivos, e reforça o compromisso da empresa com a sustentabilidade e a transparência ambiental.
+        Aplicamos metodologias alinhadas à legislação e a normas (ex.: ISO 14001), entregando relatórios objetivos,
+        plano de ação e priorização por criticidade.
       </p>
+      <ul>
+        <li>Conformidade legal e regulatória;</li>
+        <li>Auditoria de SGA (ISO 14001) e desempenho;</li>
+        <li>Due diligence ambiental (M&A, arrendamentos);</li>
+        <li>Planos de ação corretiva/preventiva.</li>
+      </ul>
     </section>
+
+    <section>
+      <h3>Benefícios e diferenciais</h3>
+      <ul class="beneficios">
+        <li><i class="fa-solid fa-magnifying-glass-chart"></i> Diagnóstico preciso e priorizado;</li>
+        <li><i class="fa-solid fa-scale-balanced"></i> Redução de riscos e passivos;</li>
+        <li><i class="fa-solid fa-clipboard-check"></i> Fortalecimento do compliance e da imagem institucional;</li>
+        <li><i class="fa-solid fa-chart-line"></i> Suporte a decisões e melhoria contínua.</li>
+      </ul>
+    </section>
+
+    <div class="cta">
+      <a href="../index.html#contato" class="btn-principal">Solicite uma proposta</a>
+    </div>
   </main>
 
-  <!-- Contact Section -->
   <section class="contact-section" id="contato">
     <div class="contact-form">
       <h2>Entre em Contato</h2>
@@ -79,35 +74,25 @@
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
-
         <button type="submit">Enviar</button>
       </form>
     </div>
     <div class="contact-info">
       <h3>Informações para Contato</h3>
-      <p>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a>
-      </p>
-      <p>
-        <i class="fa-brands fa-whatsapp"></i>
-        <a href="https://wa.me/5521992621453" target="_blank"> (21) 99262-1453</a>
-      </p>
-      <p>
-        <i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a>
-      </p>
+      <p><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <img src="../src/imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
+    <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
     <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
