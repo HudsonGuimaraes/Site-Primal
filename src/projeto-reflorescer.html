@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto Reflorescer | Primal Ambiental</title>
+  <meta name="description" content="Projeto Reflorescer: reflorestamento corporativo integrado à assessoria mensal. Plantio de mudas nativas, relatórios, indicadores e certificação ESG." />
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header padrão de internas -->
+  <header class="header">
+    <div class="header-left">
+      <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <h1 class="logo-text">Primal Ambiental</h1>
+    </div>
+
+    <nav class="nav" id="nav-menu">
+      <a href="../index.html">Início</a>
+      <a href="../index.html#quem-somos">Quem Somos</a>
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#clientes">Clientes</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" style="background-image: url('imagens/projeto-reflorescer-bg.jpg');">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Projeto Reflorescer</h2>
+      <p>O Projeto Reflorescer integra o reflorestamento nativo ao seu contrato de assessoria mensal, transformando compromisso ambiental em resultados tangíveis. A cada ciclo, realizamos o plantio de mudas nativas, acompanhamos a sobrevivência inicial e entregamos relatórios com georreferenciamento, fotos e indicadores (mudas plantadas, área restaurada e estimativa de carbono). É uma frente ESG simples de operar, transparente para comunicar e com impacto real onde mais importa: no território.</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <main class="servico-conteudo container">
+    <section>
+      <h3>Visão Geral</h3>
+      <p>
+        O <strong>Projeto Reflorescer</strong> conecta empresas à restauração ecológica por meio do plantio
+        sistemático de mudas nativas. A iniciativa é integrada aos contratos de <strong>assessoria mensal</strong>
+        e gera métricas claras para comunicação ESG, auditorias e relatórios de sustentabilidade.
+      </p>
+    </section>
+
+    <section>
+      <h3>Como Funciona</h3>
+      <ul>
+        <li><strong>Planejamento:</strong> definimos volume de mudas e periodicidade por contrato;</li>
+        <li><strong>Execução:</strong> plantio com parceiros locais e registro fotográfico georreferenciado;</li>
+        <li><strong>Monitoramento:</strong> acompanhamento de sobrevivência e manejo inicial;</li>
+        <li><strong>Relatórios:</strong> envio mensal/trimestral com indicadores e mapa.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Métricas e Indicadores</h3>
+      <div class="servicos-grid">
+        <div class="card-servico">
+          <i class="fa-solid fa-seedling"></i>
+          <h3>Mudas Plantadas</h3>
+          <p><strong id="indicador-mudas">—</strong> (atualize aqui)</p>
+        </div>
+        <div class="card-servico">
+          <i class="fa-solid fa-tree"></i>
+          <h3>Área Restaurada</h3>
+          <p><strong id="indicador-area">—</strong> ha (atualize aqui)</p>
+        </div>
+        <div class="card-servico">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Carbono Estimado</h3>
+          <p><strong id="indicador-carbono">—</strong> tCO₂e (atualize aqui)</p>
+        </div>
+        <div class="card-servico">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h3>Projetos Ativos</h3>
+          <p><strong id="indicador-projetos">—</strong> (atualize aqui)</p>
+        </div>
+      </div>
+      <p style="margin-top:10px;color:#666;"></p>
+    </section>
+
+  <section>
+    <h3>Evolução do Projeto</h3>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <span>Mudas plantadas por mês</span>
+        <!-- legenda simples -->
+        <span class="chart-legend">
+          <i class="fa-solid fa-square"></i> Mudas
+        </span>
+      </div>
+      <canvas id="grafico-mudas" width="900" height="360" aria-label="Gráfico de mudas por mês"></canvas>
+      <div class="chart-note">* Dados ilustrativos — atualize no <code>script.js</code>.</div>
+    </div>
+  </section>
+
+    
+    <section>
+      <h3>Benefícios para sua Empresa</h3>
+      <ul>
+        <li>Fortalece a agenda ESG com ação concreta e comunicável;</li>
+        <li>Gera relatórios e certificação anual para stakeholders;</li>
+        <li>Integra-se ao licenciamento, compensações e metas ambientais;</li>
+        <li>Melhora reputação, engajamento e educação ambiental interna.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Transparência e Relatórios</h3>
+      <p>
+        Cada ciclo do Reflorescer inclui relatório com <strong>fotos, localização, datas</strong> e
+        <strong>indicadores</strong>. Os dados podem ser usados em sites, redes sociais e relatórios anuais.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta" style="text-align:center;margin-top:24px;">
+      <a href="../index.html#contato" class="btn-principal">Quero participar do Reflorescer</a>
+    </div>
+  </main>
+
+  <!-- Contato padrão -->
+  <section class="contact-section" id="contato">
+    <div class="contact-form">
+      <h2>Entre em Contato</h2>
+      <form action="https://formsubmit.co/comercial@primalambiental.com.br" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Contato - Projeto Reflorescer (Site Primal)">
+        <input type="hidden" name="_next" value="https://www.primalambiental.com.br/obrigado.html">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Informações para Contato</h3>
+      <p><i class="fa-solid fa-envelope"></i>
+        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
+    <p>© 2025 Primal Ambiental Consultoria | CNPJ 47.333.459/0001-70 | Rio de Janeiro - RJ</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

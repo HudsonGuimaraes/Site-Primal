@@ -1,11 +1,3 @@
-/* ==========================================================
-   PRIMAL AMBIENTAL - CSS UNIFICADO (2025)
-   ----------------------------------------------------------
-   Autor: Hudson / Primal Ambiental
-   Finalidade: Unificar estilo do site institucional e
-   páginas de serviços com responsividade e identidade única
-   ========================================================== */
-
 /* ---------------------------
    RESET E BASE GERAL
 ---------------------------- */
@@ -512,3 +504,124 @@ body.dark-mode .theme-toggle {
 body.dark-mode .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
+/* ====== MENU + NAV PADRÃO (DESKTOP) ====== */
+.menu-toggle { display: none; background: none; border: 0; cursor: pointer; font-size: 1.6rem; color: #1b4332; margin-left: 10px; }
+.theme-toggle { background: rgba(0,0,0,0.05); border: 0; cursor: pointer; width: 42px; height: 42px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #1b4332; margin-left: 10px; transition: background .3s, transform .3s; }
+.theme-toggle:hover { background: rgba(0,0,0,0.1); transform: rotate(15deg); }
+.theme-toggle.active i { animation: glowRotate .6s ease forwards; }
+@keyframes glowRotate {
+  0% { transform: rotate(0deg) scale(1); filter: drop-shadow(0 0 0 transparent); }
+  50% { transform: rotate(180deg) scale(1.3); filter: drop-shadow(0 0 4px #b7e4c7); }
+  100% { transform: rotate(360deg) scale(1); filter: drop-shadow(0 0 0 transparent); }
+}
+
+/* Nav desktop visível por padrão */
+.nav { display: flex; align-items: center; }
+
+/* ====== MOBILE (<= 900px) ====== */
+@media (max-width: 900px) {
+  .menu-toggle { display: inline-flex; }
+  .nav {
+    position: fixed;
+    top: 70px;            /* altura do header */
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 70px);
+    background: #1b4332;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1.2rem;
+    transition: right .35s ease;
+    z-index: 999;
+  }
+  .nav.active { right: 0; }
+  .nav a { color: #fff; font-size: 1.1rem; }
+}
+
+/* ====== DARK MODE ====== */
+:root {
+  --bg-dark: #111;
+  --text-dark: #f4f4f4;
+  --card-dark: #1a1a1a;
+}
+
+body.dark-mode { background: var(--bg-dark); color: var(--text-dark); }
+body.dark-mode .header { background: rgba(17,17,17,0.9); box-shadow: 0 2px 10px rgba(255,255,255,0.05); }
+body.dark-mode .logo-text, body.dark-mode .nav a, body.dark-mode .theme-toggle { color: #b7e4c7; }
+body.dark-mode .nav a:hover { color: #95d5b2; }
+body.dark-mode .banner-principal .overlay { background: rgba(0,0,0,0.7); }
+body.dark-mode .card-servico,
+body.dark-mode .cliente-item,
+body.dark-mode .servico-conteudo { background: var(--card-dark); color: var(--text-dark); box-shadow: 0 2px 6px rgba(255,255,255,0.05); }
+body.dark-mode .card-servico:hover { background: linear-gradient(135deg, #1b4332 0%, #081c15 100%); }
+body.dark-mode .diferenciais-lista li { color: #ddd; }
+body.dark-mode .contact-section { background: #0f0f0f; }
+body.dark-mode input, body.dark-mode textarea { background: #222; border: 1px solid #444; color: #eee; }
+body.dark-mode footer { background: #000; }
+
+/* ==== FIX: Dark Mode na seção “Serviços” (ícones, cartões e fundo) ==== */
+body.dark-mode .servicos { background: #0f0f0f; }
+body.dark-mode .servicos h2 { color: #b7e4c7; }
+
+body.dark-mode .card-servico {
+  background: #1a1a1a;
+  color: #eaeaea;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+}
+body.dark-mode .card-servico i { color: #95d5b2; }
+body.dark-mode .card-servico:hover {
+  background: linear-gradient(135deg, #1b4332 0%, #0b2d20 100%);
+  color: #fff;
+}
+
+/* ==== FIX: caso exista um seletor global que deixa toda section branca ==== */
+/* (Você tem em uma versão antiga: section { background: #fff; border-radius; box-shadow; } )
+   Em dark mode, neutralizamos para não “abrir” blocos brancos grandes. */
+body.dark-mode section:not(.banner-principal):not(.banner):not(.contact-section) {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ==== Dark Mode nas páginas de serviço ==== */
+body.dark-mode .banner-overlay { background: rgba(0,0,0,0.7); }
+body.dark-mode .servico-conteudo {
+  background: #1a1a1a;
+  color: #eaeaea;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+}
+body.dark-mode .servico-conteudo h3 { color: #b7e4c7; }
+body.dark-mode .servico-conteudo ul li::before { color: #95d5b2; }
+
+/* Contato e inputs nas internas já ficam escuros pelo bloco global que você tem */
+/* ==== CHART CARD ==== */
+.chart-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.05);
+  padding: 1rem 1rem 1.2rem;
+}
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1b4332;
+  font-weight: 600;
+  margin: 0 .25rem .5rem;
+}
+.chart-legend {
+  display: inline-flex; align-items: center; gap: .4rem;
+  color: #2d6a4f; font-weight: 500;
+}
+.chart-legend i { font-size: .9rem; color: #2d6a4f; }
+.chart-note {
+  font-size: .85rem; color: #666; margin-top: .6rem; margin-left: .25rem;
+}
+
+/* Dark mode */
+body.dark-mode .chart-card { background: #1a1a1a; box-shadow: 0 2px 6px rgba(255,255,255,.05); }
+body.dark-mode .chart-header { color: #b7e4c7; }
+body.dark-mode .chart-legend, 
+body.dark-mode .chart-legend i { color: #95d5b2; }
+body.dark-mode .chart-note { color: #bdbdbd; }
