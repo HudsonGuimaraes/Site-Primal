@@ -5,74 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Licenciamento Ambiental | Primal Ambiental</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
   <header class="header">
-  <div class="header-left">
-    <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
-    <h1 class="logo-text">Primal Ambiental</h1>
-  </div>
+    <div class="header-left">
+      <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <h1 class="logo-text">Primal Ambiental</h1>
+    </div>
+    <nav class="nav" id="nav-menu">
+      <a href="../index.html">Início</a>
+      <a href="../index.html#quem-somos">Quem Somos</a>
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#clientes">Clientes</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema"><i class="fa-solid fa-moon"></i></button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
-  <nav class="nav" id="nav-menu">
-    <a href="../index.html">Início</a>
-    <a href="../index.html#quem-somos">Quem Somos</a>
-    <a href="../index.html#servicos">Serviços</a>
-    <a href="../index.html#clientes">Clientes</a>
-    <a href="../index.html#contato">Contato</a>
-  </nav>
-
-  <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
-    <i class="fa-solid fa-moon"></i>
-  </button>
-  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-</header>
-
-
-  <section class="banner" style="background-image: url('../imagens/licenciamento-bg.jpg');">
+  <section class="banner" style="background-image: url('imagens/licenciamento-bg.jpg');">
     <div class="banner-overlay"></div>
     <div class="banner-content">
       <h2>Licenciamento Ambiental</h2>
-      <p>Regularização técnica completa para empreendimentos que exigem segurança jurídica, previsibilidade e compliance ambiental.</p>
+      <p>Gestão técnica completa para regularização ambiental.</p>
     </div>
   </section>
 
   <main class="servico-conteudo container">
     <section>
-      <h3>Posicionamento</h3>
-      <p>
-        A <strong>Primal Ambiental</strong> conduz processos de licenciamento com visão estratégica, integrando estudo técnico, gestão de prazos
-        e relacionamento com órgãos ambientais para viabilizar o seu negócio com total conformidade.
-      </p>
+      <h3>Sobre o serviço</h3>
+      <p>Atuamos em todas as etapas: estudos, licenças LP/LI/LO, atendimento a condicionantes e renovação, com diálogo técnico aos órgãos competentes.</p>
     </section>
-
     <section>
-      <h3>Como atuamos</h3>
-      <p>
-        Atuamos do diagnóstico ao deferimento das licenças, com governança documental, respostas técnicas consistentes e acompanhamento
-        próximo das condicionantes, reduzindo riscos e acelerando a tomada de decisão.
-      </p>
+      <h3>Escopo de trabalho</h3>
       <ul>
-        <li>LP, LI e LO: do estudo preliminar à operação;</li>
-        <li>Elaboração de estudos, planos e programas ambientais;</li>
-        <li>Gestão de condicionantes e prazos;</li>
-        <li>Interface técnica com órgãos competentes e stakeholders;</li>
-        <li>Renovação, ampliação e regularizações.</li>
+        <li>LP, LI e LO;</li>
+        <li>Estudos e relatórios ambientais;</li>
+        <li>PCA e atendimento a condicionantes;</li>
+        <li>Acompanhamento processual e renovações.</li>
       </ul>
     </section>
-
     <section>
       <h3>Benefícios e diferenciais</h3>
       <ul class="beneficios">
-        <li><i class="fa-solid fa-clipboard-check"></i> Segurança regulatória e mitigação de passivos;</li>
-        <li><i class="fa-solid fa-handshake"></i> Relacionamento institucional e respostas técnicas robustas;</li>
-        <li><i class="fa-solid fa-chart-line"></i> Gestão ativa de prazos e condicionantes;</li>
-        <li><i class="fa-solid fa-leaf"></i> Alinhamento às melhores práticas de sustentabilidade.</li>
+        <li><i class="fa-solid fa-leaf"></i> Conformidade garantida;</li>
+        <li><i class="fa-solid fa-clipboard-check"></i> Documentação técnica completa;</li>
+        <li><i class="fa-solid fa-handshake"></i> Relacionamento com órgãos;</li>
+        <li><i class="fa-solid fa-chart-line"></i> Gestão de prazos e riscos.</li>
       </ul>
     </section>
-
     <div class="cta">
       <a href="../index.html#contato" class="btn-principal">Solicite uma proposta</a>
     </div>
@@ -86,18 +70,15 @@
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
+        <input type="hidden" name="_subject" value="Licenciamento - Site Primal">
         <button type="submit">Enviar</button>
       </form>
     </div>
     <div class="contact-info">
       <h3>Informações para Contato</h3>
-      <p><i class="fa-solid fa-envelope"></i>
-        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
-      <p><i class="fa-brands fa-whatsapp"></i>
-        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
-      <p><i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
     </div>
   </section>
 
@@ -105,5 +86,7 @@
     <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
     <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

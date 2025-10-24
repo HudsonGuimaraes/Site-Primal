@@ -5,74 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerenciamento de Resíduos | Primal Ambiental</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
   <header class="header">
-  <div class="header-left">
-    <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
-    <h1 class="logo-text">Primal Ambiental</h1>
-  </div>
+    <div class="header-left">
+      <img src="imagens/Logotipo.png" alt="Logo Primal" class="logo-img">
+      <h1 class="logo-text">Primal Ambiental</h1>
+    </div>
+    <nav class="nav" id="nav-menu">
+      <a href="../index.html">Início</a>
+      <a href="../index.html#quem-somos">Quem Somos</a>
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#clientes">Clientes</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema"><i class="fa-solid fa-moon"></i></button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
 
-  <nav class="nav" id="nav-menu">
-    <a href="../index.html">Início</a>
-    <a href="../index.html#quem-somos">Quem Somos</a>
-    <a href="../index.html#servicos">Serviços</a>
-    <a href="../index.html#clientes">Clientes</a>
-    <a href="../index.html#contato">Contato</a>
-  </nav>
-
-  <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
-    <i class="fa-solid fa-moon"></i>
-  </button>
-  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-</header>
-
-
-  <section class="banner" style="background-image: url('../imagens/residuos-bg.jpg');">
+  <section class="banner" style="background-image: url('imagens/residuos-bg.jpg');">
     <div class="banner-overlay"></div>
     <div class="banner-content">
       <h2>Gerenciamento de Resíduos</h2>
-      <p>Estratégia, rastreabilidade e conformidade para uma gestão de resíduos eficiente e sustentável.</p>
+      <p>Soluções completas e rastreáveis para todos os fluxos gerados.</p>
     </div>
   </section>
 
   <main class="servico-conteudo container">
     <section>
-      <h3>Posicionamento</h3>
-      <p>
-        Estruturamos o gerenciamento de resíduos para dar previsibilidade de custos, reduzir riscos e elevar o desempenho ambiental,
-        em total aderência à PNRS (Lei 12.305/2010) e regulamentações locais.
-      </p>
+      <h3>Sobre o serviço</h3>
+      <p>Diagnóstico, classificação (ABNT/NBR, Classe I/II), PGRS, rastreabilidade (MTR/CADRI/CTR), seleção de destinadores, indicadores e relatórios periódicos.</p>
     </section>
-
     <section>
-      <h3>Como atuamos</h3>
-      <p>
-        Implementamos governança de ponta a ponta: classificação, PGRS, rotinas operacionais, controle documental e indicadores.
-        Você acompanha tudo por relatórios claros e decisão baseada em dados.
-      </p>
+      <h3>Atividades realizadas</h3>
       <ul>
-        <li>Diagnóstico e classificação (Classe I, II-A, II-B);</li>
-        <li>Elaboração/atualização de PGRS e implantação de coleta seletiva;</li>
-        <li>Rastreabilidade e documentos (MTR, CADRI, CTR);</li>
-        <li>Seleção e auditoria de destinadores licenciados;</li>
-        <li>Capacitações e indicadores de desempenho.</li>
+        <li>Inventário e classificação (I, II-A, II-B);</li>
+        <li>PGRS e implantação de coleta seletiva;</li>
+        <li>MTR/CADRI/CTR e controle documental;</li>
+        <li>Avaliação de transportadores/destinadores licenciados;</li>
+        <li>Treinamentos e relatórios de desempenho.</li>
       </ul>
     </section>
-
     <section>
-      <h3>Benefícios e diferenciais</h3>
-      <ul class="beneficios">
-        <li><i class="fa-solid fa-recycle"></i> Redução de custos e desperdícios;</li>
-        <li><i class="fa-solid fa-clipboard-check"></i> Compliance total e menor risco de autuações;</li>
-        <li><i class="fa-solid fa-leaf"></i> Fortalecimento da agenda ESG;</li>
-        <li><i class="fa-solid fa-chart-line"></i> Indicadores e relatórios mensais.</li>
-      </ul>
+      <h3>Benefícios</h3>
+      <p>Redução de custos, mitigação de passivos e fortalecimento da imagem sustentável.</p>
     </section>
-
     <div class="cta">
       <a href="../index.html#contato" class="btn-principal">Solicite uma proposta</a>
     </div>
@@ -86,18 +66,15 @@
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Novo contato via site Primal Ambiental">
+        <input type="hidden" name="_subject" value="Resíduos - Site Primal">
         <button type="submit">Enviar</button>
       </form>
     </div>
     <div class="contact-info">
       <h3>Informações para Contato</h3>
-      <p><i class="fa-solid fa-envelope"></i>
-        <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
-      <p><i class="fa-brands fa-whatsapp"></i>
-        <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
-      <p><i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:comercial@primalambiental.com.br" target="_blank">comercial@primalambiental.com.br</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5521992621453" target="_blank">(21) 99262-1453</a></p>
+      <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/primalambiental" target="_blank">Instagram</a></p>
     </div>
   </section>
 
@@ -105,5 +82,7 @@
     <img src="imagens/Logotipo.png" alt="Logotipo da Primal Ambiental" height="50">
     <p>© 2025 Primal Ambiental. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
